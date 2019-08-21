@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+   archiveVersion = "1";
+   objectVersion = "46";
+   objects = {
+      "OBJ_1" = {
+         isa = "PBXProject";
+         attributes = {
+            LastUpgradeCheck = "9999";
+         };
+         buildConfigurationList = "OBJ_2";
+         compatibilityVersion = "Xcode 3.2";
+         developmentRegion = "English";
+         hasScannedForEncodings = "0";
+         knownRegions = (
+            "en"
+         );
+         mainGroup = "OBJ_5";
+         productRefGroup = "OBJ_25";
+         projectDirPath = ".";
+         targets = (
+            "swift-log::Logging",
+            "swift-log::LoggingTests",
+            "swift-log::SwiftPMPackageDescription",
+            "swift-log::swift-logPackageTests::ProductTarget"
+         );
+      };
+      "OBJ_10" = {
+         isa = "PBXFileReference";
+         path = "LogHandler.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_11" = {
+         isa = "PBXFileReference";
+         path = "Logging.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_12" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_13"
+         );
+         name = "Tests";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_13" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_14",
+            "OBJ_15",
+            "OBJ_16",
+            "OBJ_17",
+            "OBJ_18",
+            "OBJ_19",
+            "OBJ_20",
+            "OBJ_21",
+            "OBJ_22"
+         );
+         name = "LoggingTests";
+         path = "Tests/LoggingTests";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_14" = {
+         isa = "PBXFileReference";
+         path = "GlobalLoggingTest+XCTest.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_15" = {
+         isa = "PBXFileReference";
+         path = "GlobalLoggingTest.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_16" = {
+         isa = "PBXFileReference";
+         path = "LocalLoggingTest+XCTest.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_17" = {
+         isa = "PBXFileReference";
+         path = "LocalLoggingTest.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_18" = {
+         isa = "PBXFileReference";
+         path = "LoggingTest+XCTest.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_19" = {
+         isa = "PBXFileReference";
+         path = "LoggingTest.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_2" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_3",
+            "OBJ_4"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_20" = {
+         isa = "PBXFileReference";
+         path = "MDCTest+XCTest.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_21" = {
+         isa = "PBXFileReference";
+         path = "MDCTest.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_22" = {
+         isa = "PBXFileReference";
+         path = "TestLogger.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_23" = {
+         isa = "PBXFileReference";
+         path = "docker";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_24" = {
+         isa = "PBXFileReference";
+         path = "scripts";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_25" = {
+         isa = "PBXGroup";
+         children = (
+            "swift-log::Logging::Product",
+            "swift-log::LoggingTests::Product"
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "OBJ_29" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_30",
+            "OBJ_31"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_3" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "NO";
+            DEBUG_INFORMATION_FORMAT = "dwarf";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            ENABLE_NS_ASSERTIONS = "YES";
+            GCC_OPTIMIZATION_LEVEL = "0";
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "DEBUG=1",
+               "$(inherited)"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            ONLY_ACTIVE_ARCH = "YES";
+            OTHER_SWIFT_FLAGS = (
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "SWIFT_PACKAGE",
+               "DEBUG"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Debug";
+      };
+      "OBJ_30" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "swift-log.xcodeproj/Logging_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Logging";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.0";
+            TARGET_NAME = "Logging";
+         };
+         name = "Debug";
+      };
+      "OBJ_31" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "swift-log.xcodeproj/Logging_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Logging";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.0";
+            TARGET_NAME = "Logging";
+         };
+         name = "Release";
+      };
+      "OBJ_32" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_33",
+            "OBJ_34",
+            "OBJ_35"
+         );
+      };
+      "OBJ_33" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_9";
+      };
+      "OBJ_34" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_10";
+      };
+      "OBJ_35" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_11";
+      };
+      "OBJ_36" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_38" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_39",
+            "OBJ_40"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_39" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "swift-log.xcodeproj/LoggingTests_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.0";
+            TARGET_NAME = "LoggingTests";
+         };
+         name = "Debug";
+      };
+      "OBJ_4" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "YES";
+            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            GCC_OPTIMIZATION_LEVEL = "s";
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_SWIFT_FLAGS = (
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "SWIFT_PACKAGE"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Release";
+      };
+      "OBJ_40" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "swift-log.xcodeproj/LoggingTests_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.0";
+            TARGET_NAME = "LoggingTests";
+         };
+         name = "Release";
+      };
+      "OBJ_41" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_42",
+            "OBJ_43",
+            "OBJ_44",
+            "OBJ_45",
+            "OBJ_46",
+            "OBJ_47",
+            "OBJ_48",
+            "OBJ_49",
+            "OBJ_50"
+         );
+      };
+      "OBJ_42" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_14";
+      };
+      "OBJ_43" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_15";
+      };
+      "OBJ_44" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_16";
+      };
+      "OBJ_45" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_17";
+      };
+      "OBJ_46" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_18";
+      };
+      "OBJ_47" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_19";
+      };
+      "OBJ_48" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_20";
+      };
+      "OBJ_49" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_21";
+      };
+      "OBJ_5" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_6",
+            "OBJ_7",
+            "OBJ_12",
+            "OBJ_23",
+            "OBJ_24",
+            "OBJ_25"
+         );
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_50" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_22";
+      };
+      "OBJ_51" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_52"
+         );
+      };
+      "OBJ_52" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-log::Logging::Product";
+      };
+      "OBJ_53" = {
+         isa = "PBXTargetDependency";
+         target = "swift-log::Logging";
+      };
+      "OBJ_55" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_56",
+            "OBJ_57"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_56" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Users/magician/Applications/Xcode10.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_57" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Users/magician/Applications/Xcode10.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.0";
+         };
+         name = "Release";
+      };
+      "OBJ_58" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_59"
+         );
+      };
+      "OBJ_59" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_6";
+      };
+      "OBJ_6" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         path = "Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_61" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_62",
+            "OBJ_63"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_62" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Debug";
+      };
+      "OBJ_63" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Release";
+      };
+      "OBJ_64" = {
+         isa = "PBXTargetDependency";
+         target = "swift-log::LoggingTests";
+      };
+      "OBJ_7" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_8"
+         );
+         name = "Sources";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_8" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_9",
+            "OBJ_10",
+            "OBJ_11"
+         );
+         name = "Logging";
+         path = "Sources/Logging";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_9" = {
+         isa = "PBXFileReference";
+         path = "Locks.swift";
+         sourceTree = "<group>";
+      };
+      "swift-log::Logging" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_29";
+         buildPhases = (
+            "OBJ_32",
+            "OBJ_36"
+         );
+         dependencies = (
+         );
+         name = "Logging";
+         productName = "Logging";
+         productReference = "swift-log::Logging::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "swift-log::Logging::Product" = {
+         isa = "PBXFileReference";
+         path = "Logging.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "swift-log::LoggingTests" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_38";
+         buildPhases = (
+            "OBJ_41",
+            "OBJ_51"
+         );
+         dependencies = (
+            "OBJ_53"
+         );
+         name = "LoggingTests";
+         productName = "LoggingTests";
+         productReference = "swift-log::LoggingTests::Product";
+         productType = "com.apple.product-type.bundle.unit-test";
+      };
+      "swift-log::LoggingTests::Product" = {
+         isa = "PBXFileReference";
+         path = "LoggingTests.xctest";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "swift-log::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_55";
+         buildPhases = (
+            "OBJ_58"
+         );
+         dependencies = (
+         );
+         name = "swift-logPackageDescription";
+         productName = "swift-logPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "swift-log::swift-logPackageTests::ProductTarget" = {
+         isa = "PBXAggregateTarget";
+         buildConfigurationList = "OBJ_61";
+         buildPhases = (
+         );
+         dependencies = (
+            "OBJ_64"
+         );
+         name = "swift-logPackageTests";
+         productName = "swift-logPackageTests";
+      };
+   };
+   rootObject = "OBJ_1";
+}
